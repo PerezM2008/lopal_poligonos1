@@ -3,6 +3,7 @@ package br.senai.sp.jandira.Calculador_Poligonos.App.dao;
 import java.util.Scanner;
 
 import br.senai.sp.jandira.Calculador_Poligonos.App.model.Quadrado;
+import br.senai.sp.jandira.Calculador_Poligonos.App.ui.Menu;
 
 public class QuadradoDao {
 	
@@ -16,8 +17,9 @@ public class QuadradoDao {
 		
 		System.out.print("Digite a medida do lado do Quadrado: ");
 		quadrado.setLado(leitor.nextDouble());
+		
 		quadrado.exibirDados();
 		
+		Menu.retornar();
 	}
-
 }
